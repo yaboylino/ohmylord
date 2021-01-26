@@ -1,34 +1,8 @@
-.bolder {
-  font-weight: 700;
-  font-size: 52px;
-  line-height: 40px;
+.rhap_container {
+    padding: 20px 15px!important;
+    background-color: #262626!important;
 }
-
-.vh70 {
-  height: 70vh;
-}
-
-.wrapper {
-  position: absolute;
-  width: 100%;
-}
-
-.gradient {
-  background: black;
-  opacity: 0.6;
-  width: 100%;
-  height: calc(70vh - 80px);
-  min-height: 600px;
-  object-fit: cover;
-  z-index: 2;
-}
-
-video {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: calc(70vh - 80px);
-  min-height: 600px;
-  object-fit: cover;
+.rhap_time,
+.rhap_button-clear {
+  color: white!important;
 }

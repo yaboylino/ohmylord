@@ -9,6 +9,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.18",
     "autoprefixer": "^10.0.4",
     "next": "latest",
     "next-themes": "^0.0.10",
@@ -16,6 +17,7 @@
     "postcss": "^8.1.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-h5-audio-player": "^3.5.0",
     "sass": "^1.32.5",
     "swiper": "^6.4.8",
     "tailwindcss": "^2.0.2"
