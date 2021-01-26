@@ -5,14 +5,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export"
   },
   "dependencies": {
+    "autoprefixer": "^10.0.4",
     "next": "latest",
+    "next-themes": "^0.0.10",
+    "next-videos": "1.4.0",
+    "postcss": "^8.1.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.10",
+    "sass": "^1.32.5",
+    "swiper": "^6.4.8",
     "tailwindcss": "^2.0.2"
   }
 }
