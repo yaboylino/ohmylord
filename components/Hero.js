@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="absolute z-10 flex flex-col justify-center">
           <h5 className="text-2xl text-white text-center uppercase mb-4">Welcome to</h5>
           <h1 className="md:text-8xl sm:text-6xl text-5xl text-white text-center uppercase mb-4">Oh My Lord</h1>
-          <p className="md:text-xl text-sm text-white text-center uppercase">We make beatz that make you go.....</p>
+          <p className="md:text-xl text-sm text-white text-center uppercase">I make beatz that make you go .....</p>
         </div>
       </div>
     </div>

@@ -1,8 +1,13 @@
 .rhap_container {
-    padding: 20px 15px!important;
-    background-color: #262626!important;
+  padding: 20px 15px !important;
+  background-color: #262626 !important;
 }
 .rhap_time,
 .rhap_button-clear {
-  color: white!important;
+  color: white !important;
+}
+
+.contact {
+  background: linear-gradient(#262626b6, #494949), url("../public/contact.jpg");
+  background-size: cover;
 }

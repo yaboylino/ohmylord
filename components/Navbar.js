@@ -16,9 +16,7 @@ function Navbar() {
         </button>
       </div>
       <div className="flex md:w-full w-1/2 mx-auto col-span-4 items-center justify-center">
-        <Link href="/">
-          <img src="/logo-zay.jpg" width="200px" alt="" />
-        </Link>
+        <h1 className="logo text-6xl">Ohmylord</h1>
       </div>
       <div className="md:p-8 p-3 col-span-1">
         <ul className="flex items-center justify-end">

@@ -14,10 +14,12 @@
     "next": "latest",
     "next-themes": "^0.0.10",
     "next-videos": "1.4.0",
+    "nodemailer": "^6.4.17",
     "postcss": "^8.1.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-h5-audio-player": "^3.5.0",
+    "redaxios": "^0.3.0",
     "sass": "^1.32.5",
     "swiper": "^6.4.8",
     "tailwindcss": "^2.0.2"
