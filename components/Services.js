@@ -7,7 +7,7 @@ const Services = () => {
       <div className="services grid grid-cols-3 gap-4 ">
         <div className="lg:col-span-1 col-span-3 pt-5">
           <div className="flex justify-center flex-col items-center px-20">
-            <img className="mb-5 w-16" src="/record-button.svg" alt="" />
+            <img className="mb-52 w-16" src="/record-button.svg" alt="" />
             <h3 className="recording text-xl font-bolder text-center mb-8">Recording</h3>
           </div>
           <p className="px-10 pb-3">Dit is een faketekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst op deze plek. Wat u hier leest is een voorbeeldtekst. Deze wordt later vervangen door de uiteindelijke tekst, die nu nog niet bekend is. De faketekst is dus een tekst die eigenlijk nergens over gaat. Het grappige is, dat mensen deze toch vaak lezen. Zelfs als men weet dat het om een faketekst gaat, lezen ze toch door.</p>

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import axios from "redaxios"
 
 const Contact = () => {
+  const [toggle, setToggle] = useState(false)
   const [gegevens, setGegevens] = useState({
     voornaam: "",
     achternaam: "",
@@ -13,7 +14,10 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    console.log(gegevens)
+    setToggle(true)
+    setTimeout(() => {
+      setToggle(false)
+    }, 3000)
     axios.post("/api/sendmail/", {
       method: "POST",
       headers: {
@@ -74,11 +78,12 @@ const Contact = () => {
             </div>
             <div className="form__name w-full sm:col-span-2 col-span-2 mt-8">
               <label className="relative hidden active:block focus:top-0">Telefoonnummer</label>
-              <textarea className="bg-transparent border border-white text-white " rows="4" cols="40" type="text" value={gegevens.bericht} onChange={e => setGegevens({ ...gegevens, bericht: e.target.value })} placeholder="Bericht" required />
+              <textarea className="bg-transparent border border-white text-white w-full" type="text" value={gegevens.bericht} onChange={e => setGegevens({ ...gegevens, bericht: e.target.value })} placeholder="Bericht" required />
             </div>
-            <div className="w-full sm:w-2/6">
+            <div className="w-full sm:w-2/6 col-span-2">
               <button className="uppercase bg-white  text-gray-700 py-3 px-5 text-center sm:mt-0 mt-5">Versturen</button>
             </div>
+            {toggle === true ? <p className="col-span-2 text-white text-xs">Bericht is verstuurd. Ik neem zo spoedig mogelijk contact met je op.</p> : ""}
           </form>
         </div>
       </div>

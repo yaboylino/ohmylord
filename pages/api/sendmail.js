@@ -3,9 +3,6 @@ const nodemailer = require("nodemailer")
 export default async function main(req, res) {
   const email = req.body.body
 
-  console.log(email)
-  let testAccount = await nodemailer.createTestAccount()
-
   let transporter = nodemailer.createTransport({
     host: "ohmylord.nl",
     port: 465,
@@ -17,8 +14,8 @@ export default async function main(req, res) {
   })
 
   let info = await transporter.sendMail({
-    from: `${email.voornaam} ${email.achternaam} <${email.email}>`,
-    to: "lionellord@gmail.com, lionellord@gmail.com",
+    from: `Contact Form ${email.voornaam} ${email.achternaam} <${email.email}>`,
+    to: "prodby@ohmylord.nl",
     subject: `${email.onderwerp}`,
     text: `${email.bericht}`
   })
